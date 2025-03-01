@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3000/api'; // URL do seu backend
+const BASE_URL = 'https://cineblur.onrender.com/api';
 
 export async function getImagem(idFilme) {
     try {
