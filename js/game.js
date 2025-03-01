@@ -36,7 +36,7 @@ export async function iniciarPartida(dificuldade) {
 
   const imgDica = document.createElement("img");
   imgDica.id = "img-dica";
-  imgDica.src = "../assets/imagens/dica.png";
+  imgDica.src = "https://carloss0101.github.io/CineBlur/assets/imagens/dica.png";
 
   imgDica.addEventListener("click", function () {
     apresentarDicas(filme);
