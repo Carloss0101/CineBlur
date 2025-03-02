@@ -286,3 +286,33 @@ body {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/*Celulares*/
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.3em;
+  }
+
+  #jogo {
+    width: 330px;
+  }
+  #jogo input {
+    width: 250px;
+  }
+
+  #buttonPular {
+    margin-top: 10px;
+  }
+  #jogo-imagem {
+    width: 330px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  #embadFinal {
+    width: 320px;
+  }
+  #geral-dica {
+    width: 30px;
+    height: 30px;
+  }
+}
