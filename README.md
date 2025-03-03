@@ -22,3 +22,6 @@ CineBlur é um jogo onde você tenta adivinhar o nome do filme a partir de uma i
 
 - Implementar um **ranking** para exibir os jogadores com mais pontos.
 - Melhorar a validação das respostas dos usuários.
+
+
+Confira o deploy do CineBlur no link abaixo: [https://carloss0101.github.io/CineBlur/]
