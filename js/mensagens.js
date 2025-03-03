@@ -23,9 +23,9 @@ export function telaCarregamento() {
     const carregamento = document.getElementById('carregamento');
     carregamento.style.display = 'flex';
 
+    document.getElementById('jogo').style.display = 'block';
     setTimeout(() => {
         carregamento.style.display = 'none';
-        document.getElementById('jogo').style.display = 'block';
     }, 2500);
 }
 
