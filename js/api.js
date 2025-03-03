@@ -1,4 +1,4 @@
-const BASE_URL = 'cineblur-backend.railway.internal/api';
+const BASE_URL = 'https://cineblur-backend-production.up.railway.app/api';
 
 export async function getImagem(idFilme) {
     try {
