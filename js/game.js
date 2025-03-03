@@ -78,8 +78,14 @@ export async function iniciarPartida(dificuldade) {
   buttonPular.innerText = "Pular";
 
   buttonPular.addEventListener("click", function () {
-    proximaRodada(dificuldade);
+    buttonPular.disabled = true;
+    quantJogadas++;
     gerarMensagemNaTela("Você pulou a rodada!", "yellow");
+    proximaRodada(dificuldade);
+  
+    setTimeout(function() {
+      buttonPular.disabled = false;
+    }, 5000);
   });
 
   divDica.append(imgDica);
@@ -112,10 +118,11 @@ function calcularPontos(dificuldade) {
 }
 
 function proximaRodada(dificuldade) {
-  quantJogadas++;
-  if (quantJogadas < 5) {
+  if (quantJogadas <= 5) {
     iniciarPartida(dificuldade);
-  } else {
+  } 
+  if(quantJogadas > 5) {
     gerarTelaFinal(totalPontos);
+    document.getElementById('jogo').style.display = 'none';
   }
 }
