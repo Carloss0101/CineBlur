@@ -4,8 +4,6 @@ let quantDicas = 0;
 
 export function apresentarDicas(ObjetoFilme) {
   if (quantDicas < 1) {
-    console.log(ObjetoFilme.overview);
-
     const div = document.createElement("div");
     div.id = "dica";
 
