@@ -3,7 +3,7 @@ import { apresentarDicas } from "./dicas.js";
 import { gerarMensagemNaTela, telaCarregamento, gerarTelaFinal } from "./mensagens.js";
 import filmes from "./filmes.js";
 
-let quantJogadas = 1;
+let quantJogadas = 0;
 let totalPontos = 0;
 
 export async function iniciarPartida(dificuldade) {
@@ -120,6 +120,7 @@ function calcularPontos(dificuldade) {
 function proximaRodada(dificuldade) {
   if (quantJogadas <= 5) {
     iniciarPartida(dificuldade);
+    quantJogadas++;
   } 
   if(quantJogadas > 5) {
     gerarTelaFinal(totalPontos);
