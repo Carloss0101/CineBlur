@@ -79,7 +79,6 @@ export async function iniciarPartida(dificuldade) {
 
   buttonPular.addEventListener("click", function () {
     buttonPular.disabled = true;
-    quantJogadas++;
     gerarMensagemNaTela("Você pulou a rodada!", "yellow");
     proximaRodada(dificuldade);
   
