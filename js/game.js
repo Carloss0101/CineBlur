@@ -3,7 +3,7 @@ import { apresentarDicas } from "./dicas.js";
 import { gerarMensagemNaTela, telaCarregamento, gerarTelaFinal } from "./mensagens.js";
 import filmes from "./filmes.js";
 
-let quantJogadas = 0;
+let quantJogadas = 1;
 let totalPontos = 0;
 
 export async function iniciarPartida(dificuldade) {
