@@ -124,5 +124,6 @@ function proximaRodada(dificuldade) {
   if(quantJogadas > 5) {
     gerarTelaFinal(totalPontos);
     document.getElementById('jogo').style.display = 'none';
+    document.getElementById('carregamento').style.display = 'none';
   }
 }
