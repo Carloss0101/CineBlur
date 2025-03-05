@@ -21,7 +21,6 @@ export async function getFilmesPopulares(filmes) {
 
         const aleatorio = Math.floor(Math.random() * filmes.length);
         
-        console.log('Numero aleatorio: ', aleatorio, filmes[aleatorio]);
         const filmePesquisa = filmes[aleatorio]
 
         const response = await fetch(`${BASE_URL}/getFilmesPopulares?filme=${encodeURIComponent(filmePesquisa)}`);
