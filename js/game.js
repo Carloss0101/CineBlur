@@ -29,8 +29,6 @@ export async function iniciarPartida(dificuldade) {
   img.src = url;
   img.id = "jogo-imagem";
 
-  console.log(filme.original_title, filme.title);
-
   const divDica = document.createElement("div");
   divDica.id = "geral-dica";
 
